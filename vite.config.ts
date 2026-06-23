@@ -9,9 +9,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg', 'pwa-192x192.svg', 'pwa-512x512.svg'],
       manifest: {
-        name: 'Chinese Learning Keyboard',
-        short_name: '중국어 키보드',
-        description: '병음 입력부터 단어 저장, 발음 학습, 획순 학습, 쓰기 연습, 플래시카드 복습까지 하나의 플랫폼에서 제공하는 개인용 중국어 학습 PWA',
+        name: 'HanziNote',
+        short_name: 'HanziNote',
+        description: '병음 입력부터 플래시카드 복습까지, 오프라인에서 동작하는 개인용 중국어 학습 PWA',
         theme_color: '#1e40af',
         background_color: '#ffffff',
         display: 'standalone',

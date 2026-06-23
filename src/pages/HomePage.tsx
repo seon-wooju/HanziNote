@@ -51,8 +51,8 @@ export function HomePage() {
     <div className="flex flex-col items-center px-4 py-8 max-w-3xl mx-auto">
       {/* App Title */}
       <header className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-800">중국어 학습 키보드</h1>
-        <p className="text-sm text-gray-500 mt-1">中文学习键盘</p>
+        <h1 className="text-3xl font-bold text-gray-800">HanziNote</h1>
+        <p className="text-sm text-gray-500 mt-1">중국어 학습 노트</p>
       </header>
 
       {/* Due Card Badge */}
