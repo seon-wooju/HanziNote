@@ -192,6 +192,36 @@ export function InputPage() {
       {/* Pinyin Mode */}
       {inputMode === 'pinyin' && (
         <>
+          {/* 병음 입력 가이드 */}
+          <details className="mb-4 bg-blue-50 border border-blue-100 rounded-lg p-3">
+            <summary className="text-sm font-medium text-blue-700 cursor-pointer select-none">
+              💡 병음 입력 방법
+            </summary>
+            <div className="mt-3 text-sm text-gray-700 space-y-2">
+              <p>병음 뒤에 <strong>성조 번호(1~4)</strong>를 붙여서 입력합니다.</p>
+              <table className="w-full text-xs border-collapse">
+                <thead>
+                  <tr className="border-b border-blue-200">
+                    <th className="py-1 text-left">성조</th>
+                    <th className="py-1 text-left">설명</th>
+                    <th className="py-1 text-left">입력</th>
+                    <th className="py-1 text-left">결과</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-600">
+                  <tr><td className="py-1">1성 (ˉ)</td><td>높고 평평하게</td><td className="font-mono">ma1</td><td>mā</td></tr>
+                  <tr><td className="py-1">2성 (ˊ)</td><td>올라가는 톤</td><td className="font-mono">ma2</td><td>má</td></tr>
+                  <tr><td className="py-1">3성 (ˇ)</td><td>내려갔다 올라감</td><td className="font-mono">ma3</td><td>mǎ</td></tr>
+                  <tr><td className="py-1">4성 (ˋ)</td><td>짧고 세게 내려감</td><td className="font-mono">ma4</td><td>mà</td></tr>
+                </tbody>
+              </table>
+              <p className="text-xs text-gray-500 mt-2">
+                💬 예시: <span className="font-mono">ni3 hao3</span> → nǐ hǎo (你好)<br/>
+                💬 여러 음절은 <strong>공백</strong>으로 구분: <span className="font-mono">pai2 qiu2</span> → pái qiú (排球)
+              </p>
+            </div>
+          </details>
+
           <div className="mb-4">
             <label htmlFor="pinyin-input" className="block text-sm font-medium text-gray-600 mb-1">
               병음 입력 (예: ni3 hao3)
